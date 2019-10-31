@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Webpage </title>
+<link rel = "stylesheet" href = "stylesheet.css">
+</head>
+<body>
+<div class = "road">
+<img class = "image" src = "road.png">
+<img class = "mario" src = "mario.png">
+<img class = "luigi" src = "luigi.png">
+<img class = "cloud" src = "cloud.png">
+<img class = "cloud" src = "cloud.png">
+<input type = "button" value = "Go mario" class = "btn" onclick = "drive()">
+<input type = "button" value = "Stop" class = "stop">
+</div>
+<script src = "jscode.js"> </script>
+<script src = "jquery-3.4.1.js"> </script>
+<script src = "jquery-ui.js"> </script>
+<script>
+$(document).ready(function(){
+$(".stop").click(function(){
+$(".mario").stop();
+});
+$(".mario").draggable();
+});
+</script>
+</body>
+</html>
